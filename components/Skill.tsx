@@ -17,7 +17,7 @@ function Skill({ directionLeft, skill }: Props) {
     <div className="group relative flex cursor-pointer">
       <motion.img
         initial={{
-          x: directionLeft ? -150 : 150,
+          x: directionLeft ? -100 : 100,
           opacity: 0,
         }}
         src={skill.attributes.techImg.data.attributes.url}

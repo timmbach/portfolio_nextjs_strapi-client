@@ -23,7 +23,7 @@ function Skills({ skills }: IPropTypes) {
       <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">
         Hover over a skill for current proficiency
       </h3>
-      <div className="grid grid-cols-6 md:grid-cols-8 gap-3 gap-x-5 h-[30vh]">
+      <div className="grid grid-cols-5 md:grid-cols-8 gap-1 gap-x-2 md:gap-3 md:gap-x-5 h-[30vh]">
         {skills.items.map((skill) => (
           <Skill
             key={skill.id}
