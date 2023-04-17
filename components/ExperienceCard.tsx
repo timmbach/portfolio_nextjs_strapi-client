@@ -4,9 +4,8 @@ import Image from "next/image";
 import { IExperience } from "@/types";
 // import heroImage from "../public/twitter_YwrvQmzz_400x400.jpg";
 
-const api_url =
-  process.env.STRAPI_PUBLIC_API_URL ||
-  "https://portfolio-strapi-nextjs.herokuapp.com";
+// const api_url =
+//   process.env.STRAPI_PUBLIC_API_URL || "https://tim-portfolio.onrender.com";
 
 interface experience {}
 type Props = {
@@ -37,7 +36,7 @@ function ExperienceCard({ experience }: Props) {
       >
         <div className="w-32 h-32 relative rounded-full xl:w-[200px] xl:h-[200px] object-cover mx-auto object-center overflow-hidden">
           <Image
-            src={`${api_url}${experience.attributes.companyLogo.data.attributes.url}`}
+            src={experience.attributes.companyLogo.data.attributes.url}
             alt=""
             fill
           />

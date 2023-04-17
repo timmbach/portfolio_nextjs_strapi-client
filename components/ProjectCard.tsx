@@ -15,9 +15,8 @@ type Props = {
   // }[];
 };
 
-const api_url =
-  process.env.STRAPI_PUBLIC_API_URL ||
-  "https://portfolio-strapi-nextjs.herokuapp.com";
+// const api_url =
+//   process.env.STRAPI_PUBLIC_API_URL || "https://tim-portfolio.onrender.com";
 
 function ProjectCard({ project }: Props) {
   return (
@@ -41,7 +40,7 @@ function ProjectCard({ project }: Props) {
           className="relative rounded-lg overflow-hidden h-[33vh] md:h-[50vh] w-[78vw] max-w-2xl"
         >
           <Image
-            src={`${api_url}${project.attributes.projectSnapshot.data.attributes.url}`}
+            src={project.attributes.projectSnapshot.data.attributes.url}
             alt=""
             fill
           />

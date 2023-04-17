@@ -3,8 +3,7 @@ const qs = require("qs");
 
 const api = axios.create({
   baseURL:
-    process.env.STRAPI_PUBLIC_API_URL ||
-    "https://portfolio-strapi-nextjs.herokuapp.com",
+    process.env.STRAPI_PUBLIC_API_URL || "https://tim-portfolio.onrender.com",
   headers: {
     Authorization: `Bearer ${process.env.STRAPI_API_TOKEN}`,
   },

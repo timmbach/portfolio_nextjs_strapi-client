@@ -35,7 +35,13 @@ const nextConfig = {
       },
       {
         protocol: "https",
-        hostname: "portfolio-strapi-nextjs.herokuapp.com",
+        hostname: "tim-portfolio.onrender.com",
+        port: "",
+        pathname: "**",
+      },
+      {
+        protocol: "https",
+        hostname: "res.cloudinary.com",
         port: "",
         pathname: "**",
       },

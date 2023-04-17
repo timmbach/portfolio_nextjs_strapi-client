@@ -8,7 +8,8 @@ const qs = require("qs");
 type Props = {
   // abouts: any;
 };
-const api_url = "https://portfolio-strapi-nextjs.herokuapp.com";
+const api_url =
+  process.env.STRAPI_PUBLIC_API_URL || "https://tim-portfolio.onrender.com";
 
 function About({}: Props) {
   const [profileSummary, setProfileSummary] = useState("");
@@ -34,8 +35,6 @@ function About({}: Props) {
     fetchData();
   }, []);
 
-  const aboutImgSrc = `${api_url}${profilePicUrl}`;
-
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -47,7 +46,7 @@ function About({}: Props) {
         About
       </h3>
       <motion.div
-        className="relative mt-20 md:mb-0 flex-shrink-0 w-56 h-56 rounded-full object-cover md:rounded-lg md:w-64 md:h-96 xl:w-[500px] xl:h-[500px] overflow-hidden"
+        className="relative mt-20 md:mb-0 flex-shrink-0 w-52 h-60 rounded-full object-fit md:rounded-lg md:w-56 md:h-96 xl:w-[420px] xl:h-[580px] overflow-hidden"
         initial={{
           x: -200,
           opacity: 0,
@@ -58,7 +57,7 @@ function About({}: Props) {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
-        <Image src={aboutImgSrc} alt="" fill />
+        <Image src={profilePicUrl} alt="" fill />
       </motion.div>
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">

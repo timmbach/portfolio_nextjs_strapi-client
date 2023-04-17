@@ -8,9 +8,9 @@ type Props = {
   skill: ISkill;
 };
 
-const api_url =
-  process.env.STRAPI_PUBLIC_API_URL ||
-  "https://portfolio-strapi-nextjs.herokuapp.com";
+// const api_url =
+//   process.env.STRAPI_PUBLIC_API_URL ||
+//   "https://tim-portfolio.onrender.com";
 
 function Skill({ directionLeft, skill }: Props) {
   return (
@@ -20,7 +20,7 @@ function Skill({ directionLeft, skill }: Props) {
           x: directionLeft ? -150 : 150,
           opacity: 0,
         }}
-        src={`${api_url}${skill.attributes.techImg.data.attributes.url}`}
+        src={skill.attributes.techImg.data.attributes.url}
         transition={{ duration: 0.7 }}
         whileInView={{ opacity: 1, x: 0 }}
         className="rounded-xl border border-gray-500 bg-white w-14 h-14 md:w-20 md:h-20 xl:w-20 xl:h-20 object-contain filter group-hover:grayscale transition duration-300 ease-in-out"
