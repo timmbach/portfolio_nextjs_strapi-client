@@ -37,7 +37,7 @@ function ProjectCard({ project }: Props) {
           transition={{ duration: 1 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
-          className="relative rounded-lg overflow-hidden h-[33vh] md:h-[50vh] w-[78vw] max-w-2xl"
+          className="relative rounded-lg overflow-hidden h-[32vh] md:h-[50vh] w-[78vw] max-w-2xl"
         >
           <Image
             src={project.attributes.projectSnapshot.data.attributes.url}
