@@ -23,10 +23,10 @@ function WorkExperience({ experiences }: IPropTypes): JSX.Element {
       <div className="w-full mt-32 flex space-x-5 overflow-x-scroll snap-x p-10 snap-mandatory">
         {experiences &&
           experiences.items
-            .reverse()
             .map((experience) => (
               <ExperienceCard key={experience.id} experience={experience} />
-            ))}
+            ))
+            .reverse()}
       </div>
     </motion.div>
   );
