@@ -21,7 +21,7 @@ function Skills({ skills }: IPropTypes) {
         Skills
       </h3>
       <h3 className="absolute top-36 uppercase tracking-[3px] text-gray-500 text-sm">
-        Hover over a skill for current proficiency
+        Hover over a skill for name
       </h3>
       <div className="grid grid-cols-5 md:grid-cols-8 gap-1 gap-x-2 md:gap-3 md:gap-x-5 h-[30vh]">
         {skills.items.map((skill) => (
