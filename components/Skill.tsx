@@ -25,13 +25,13 @@ function Skill({ directionLeft, skill }: Props) {
         whileInView={{ opacity: 1, x: 0 }}
         className="rounded-xl border border-gray-500 bg-white w-14 h-14 md:w-20 md:h-20 xl:w-20 xl:h-20 object-contain filter group-hover:grayscale transition duration-300 ease-in-out"
       />
-      <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white w-14 h-14 md:w-20 md:h-20 xl:w-20 xl:h-20 rounded-xl z-0">
+      {/* <div className="absolute opacity-0 group-hover:opacity-80 transition duration-300 ease-in-out group-hover:bg-white w-14 h-14 md:w-20 md:h-20 xl:w-20 xl:h-20 rounded-xl z-0">
         <div className="flex items-center justify-center h-full">
           <p className="text-xl md:text-3xl font-bold text-black opacity-100">
             {skill.attributes.rating}%
           </p>
         </div>
-      </div>
+      </div> */}
     </div>
   );
 }
