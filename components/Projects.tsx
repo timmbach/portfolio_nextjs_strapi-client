@@ -30,7 +30,7 @@ function Projects({ projects }: IPropTypes): JSX.Element {
         Projects
       </h3>
       <p className="absolute top-[8.5rem] md:top-32 uppercase tracking-[3px] text-[10px] animate-pulse text-[#F7AB0A]">
-        {"<--"} swipe {"-->"}
+        {"<--"} swipe right {"-->"}
       </p>
 
       <div className="relative w-full flex overflow-x-scroll overflow-y-hidden snap-x snap-mandatory z-20">

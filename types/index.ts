@@ -55,6 +55,7 @@ export interface ISkill {
 export interface ISkillAttribute {
   rating: number;
   techImg: ITechImg;
+  name: string;
 }
 export interface ITechImg {
   data: ITechImgData;

@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import Image from "next/image";
 // import { fetcher } from "../lib/api";
 // import profileImg from "../public/profile-pic.png";
+import heroImage from "../public/twitter_YwrvQmzz_400x400.jpg";
 const qs = require("qs");
 
 type Props = {
@@ -46,7 +47,7 @@ function About({}: Props) {
         About
       </h3>
       <motion.div
-        className="relative mt-20 md:mb-0 flex-shrink-0 w-52 h-60 rounded-full object-fit md:rounded-lg md:w-56 md:h-96 xl:w-[420px] xl:h-[580px] overflow-hidden"
+        className="relative mt-20 md:mb-0 flex-shrink-0 w-52 h-56 rounded-full object-fit md:rounded-lg md:w-56 md:h-60 xl:w-[420px] xl:h-[450px] overflow-hidden"
         initial={{
           x: -200,
           opacity: 0,
@@ -57,7 +58,7 @@ function About({}: Props) {
         whileInView={{ opacity: 1, x: 0 }}
         viewport={{ once: true }}
       >
-        <Image src={profilePicUrl} alt="" fill />
+        <Image src={heroImage} alt="" fill />
       </motion.div>
       <div className="space-y-10 px-0 md:px-10">
         <h4 className="text-4xl font-semibold">
